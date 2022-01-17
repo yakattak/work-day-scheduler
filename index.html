@@ -22,7 +22,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body class = "container-fluid">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -30,123 +30,124 @@
     </header>
 
 
-    <div class="container">
+    
       <!-- 9 am -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 9 am </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="9button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>9 am</p>
         </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="9button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
       </div>
 
-      <!-- 10 am -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 10 am </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="10button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <!-- 10 am-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>10 am</p>
         </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="10button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
+      </div>
+    
+      <!-- 11 am-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>11 am</p>
+        </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="11button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
       </div>
 
-      <!-- 11 am -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 11 am </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="11button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <!-- 12 pm-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>12 pm</p>
         </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="12button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
       </div>
 
-      <!-- 12 pm -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 12 pm </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="12button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <!-- 1 pm-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>1 pm</p>
         </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="1button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
       </div>
 
-      <!-- 1 pm -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 1 pm </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="1button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <!-- 2 pm-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>2 pm</p>
         </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="2button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
       </div>
 
-      <!--2 pm -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 2 pm </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="2button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <!-- 3 pm-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>3 pm</p>
         </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="3button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
       </div>
 
-      <!-- 3 pm -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 3 pm </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="3button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+      <!-- 4 pm-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>4 pm</p>
         </div>
-      </div>
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="4button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+              <i class="fas fa-save" ></i>
+          </button>                
+       </div>
 
-      <!-- 4 pm -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 4 pm </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="4button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
-              <i class="fas fa-save" ></i>
-            </button>
+       <!-- 5 pm-->
+      <div class="row vw-100 d-flex mb-4">
+        <div class ="col-1 offset-1 time-block hour" > 
+          <p>5 pm</p>
         </div>
-      </div>
-
-      <!-- 5 pm -->
-      <div class = "mb-3 input-group time-block">
-        <div class="input-group-prepend "> 
-          <span class="input-group-text hour" > 5 pm </span>
-        </div>                  
-        <textarea class = "form-control text-center description textarea" value =""></textarea>
-        <div class = "input-group-append">
-            <button id ="5button" class="btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
+        
+        
+          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <button id ="5button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
               <i class="fas fa-save" ></i>
-            </button>
-        </div>
+          </button>                
       </div>
+      
 
       
     
