@@ -24,16 +24,14 @@ $(".schedule").on("blur", "textarea", function() {
 var loadTasks = function() {
     $(".textarea").each( function() {
     var loadId = $(this).attr("id");
-
-    //ignore all items that don't exist or are null
-    if (JSON.parse(localStorage.getItem(loadId))) {
-        console.log("yes");
-        $(this).text(JSON.parse(localStorage.getItem(loadId)));
-    };
+    $(this).text(JSON.parse(localStorage.getItem(loadId)));
+    
     
     
 
     })
 
 }
+
+loadTasks();
 
