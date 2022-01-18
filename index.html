@@ -29,7 +29,7 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
-
+    <div class = "vw-100 schedule">
     
       <!-- 9 am -->
       <div class="row vw-100 d-flex mb-4">
@@ -38,7 +38,7 @@
         </div>
         
         
-          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <textarea id = "9amTask" class = " col-8 form-control text-center description textarea" value =""></textarea>
           <button id ="9button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
               <i class="fas fa-save" ></i>
           </button>                
@@ -51,7 +51,7 @@
         </div>
         
         
-          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <textarea id = "10amTask" class = " col-8 form-control text-center description textarea" value =""></textarea>
           <button id ="10button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
               <i class="fas fa-save" ></i>
           </button>                
@@ -64,7 +64,8 @@
         </div>
         
         
-          <textarea class = " col-8 form-control text-center description textarea" value =""></textarea>
+          <textarea class = " col-8 form-control text-center description textarea" value ="">
+          </textarea>
           <button id ="11button" class="col-1 btn btn-outline-secondary d-flex justify-content-center align-items-center saveBtn" type="button">
               <i class="fas fa-save" ></i>
           </button>                
@@ -147,6 +148,8 @@
               <i class="fas fa-save" ></i>
           </button>                
       </div>
+
+    </div>
       
 
       
@@ -157,7 +160,12 @@
   
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
   </body>
 </html>
