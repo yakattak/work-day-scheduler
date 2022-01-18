@@ -26,12 +26,25 @@ var loadTasks = function() {
     var loadId = $(this).attr("id");
     $(this).text(JSON.parse(localStorage.getItem(loadId)));
     
+    var dataTime = $(this).data("time");
+    console.log (dataTime);
+    //add class for color coding
     
+    })
     
 
-    })
+
+
+    
 
 }
+
+//check if after current time
+
+
+
+
+
 
 loadTasks();
 
