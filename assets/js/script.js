@@ -54,10 +54,11 @@ var loadTasks = function() {
         $(this).addClass("future");
     };
     
+     //load saved tasks into window
     $(this).text(JSON.parse(localStorage.getItem(loadId)));
     });
 
-    //load saved tasks into window
+   
     
     
    
