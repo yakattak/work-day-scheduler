@@ -1,4 +1,6 @@
-workTask = [];
+var currentHour = new Date().getHours();
+
+
 
 $(".saveBtn").on("click", function() {
     var comment = $(this).closest("div").children(".textarea");
@@ -26,9 +28,21 @@ var loadTasks = function() {
     var loadId = $(this).attr("id");
     $(this).text(JSON.parse(localStorage.getItem(loadId)));
     
+    //get time of each event
     var dataTime = $(this).data("time");
-    console.log (dataTime);
+    
     //add class for color coding
+    if (parseInt(dataTime) <parseInt(currentHour)) {
+        $(this).addClass("past");
+    }
+
+    if (parseInt(dataTime) === parseInt(currentHour)) {
+        $(this).addClass("present");
+    }
+
+    if (parseInt(dataTime) > parseInt(currentHour)) {
+        $(this).addClass("future");
+    }
     
     })
     
