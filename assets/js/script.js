@@ -36,7 +36,7 @@ $(".schedule").on("blur", "textarea", function() {
 var loadTasks = function() {
     $(".textarea").each( function() {
     var loadId = $(this).attr("id");
-    $(this).text(JSON.parse(localStorage.getItem(loadId)));
+    
     
     //get time of each event
     var dataTime = $(this).data("time");
@@ -54,7 +54,11 @@ var loadTasks = function() {
         $(this).addClass("future");
     };
     
+    $(this).text(JSON.parse(localStorage.getItem(loadId)));
     });
+
+    //load saved tasks into window
+    
     
    
 
